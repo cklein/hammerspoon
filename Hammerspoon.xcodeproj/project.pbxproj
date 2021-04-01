@@ -589,6 +589,12 @@
 		D6F310F01BDF113900045CCD /* libstyledtext.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F310D11BDF0E0000045CCD /* libstyledtext.m */; };
 		D6FD56901C0422DE00BAE238 /* libconsole.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FD56821C04228800BAE238 /* libconsole.m */; };
 		DAED28EC20B95E8F004602CB /* led.m in Sources */ = {isa = PBXBuildFile; fileRef = DAED28EB20B95E8E004602CB /* led.m */; };
+		F70240F0276A960800839840 /* LuaSkin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB852342735B02400462DD0 /* LuaSkin.framework */; };
+		F70240F7276A967C00839840 /* liblaunchservices.m in Sources */ = {isa = PBXBuildFile; fileRef = F70240EA276A95E000839840 /* liblaunchservices.m */; };
+		F70240FA276A97E400839840 /* launchservices.lua in Copy Extension Lua files */ = {isa = PBXBuildFile; fileRef = F70240EB276A95E000839840 /* launchservices.lua */; };
+		F7C274242773289D00BA7617 /* HSlaunchservices.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C274232773289D00BA7617 /* HSlaunchservices.m */; };
+		F7C274262773295C00BA7617 /* test_launchservices.lua in Resources */ = {isa = PBXBuildFile; fileRef = F7C274252773295C00BA7617 /* test_launchservices.lua */; };
+		F7F3D68A27760AF300016D56 /* liblaunchservices.dylib in Copy Extension Dylibs */ = {isa = PBXBuildFile; fileRef = F70240F6276A960800839840 /* liblaunchservices.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1243,6 +1249,13 @@
 			remoteGlobalIDString = D6FD56851C0422B400BAE238;
 			remoteInfo = console;
 		};
+		F70240F8276A96F000839840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9445CA0319083251002568BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F70240EC276A960800839840;
+			remoteInfo = launchservices;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1304,6 +1317,7 @@
 			dstPath = hs;
 			dstSubfolderSpec = 10;
 			files = (
+				F7F3D68A27760AF300016D56 /* liblaunchservices.dylib in Copy Extension Dylibs */,
 				4FCA05CD27678B410089A5FC /* libmarkdown.dylib in Copy Extension Dylibs */,
 				4FF06128274AA7E600FB15D6 /* libcamera.dylib in Copy Extension Dylibs */,
 				4FF73A1D2735439B0007074E /* hs in Copy Extension Dylibs */,
@@ -1405,6 +1419,7 @@
 			dstPath = extensions/hs;
 			dstSubfolderSpec = 7;
 			files = (
+				F70240FA276A97E400839840 /* launchservices.lua in Copy Extension Lua files */,
 				4FCA05A0276767350089A5FC /* window_layout.lua in Copy Extension Lua files */,
 				4FF06129274AA7F400FB15D6 /* camera.lua in Copy Extension Lua files */,
 				4FF061152747A25C00FB15D6 /* tangent.lua in Copy Extension Lua files */,
@@ -2063,6 +2078,11 @@
 		D6FD568F1C0422B400BAE238 /* libconsole.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libconsole.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAED28EB20B95E8E004602CB /* led.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = led.m; path = extensions/hid/led.m; sourceTree = "<group>"; };
 		DE2547C1592A3EDD90D9815D /* Pods-Hammerspoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hammerspoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hammerspoon/Pods-Hammerspoon.release.xcconfig"; sourceTree = "<group>"; };
+		F70240EA276A95E000839840 /* liblaunchservices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = liblaunchservices.m; sourceTree = "<group>"; };
+		F70240EB276A95E000839840 /* launchservices.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = launchservices.lua; sourceTree = "<group>"; };
+		F70240F6276A960800839840 /* liblaunchservices.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblaunchservices.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C274232773289D00BA7617 /* HSlaunchservices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSlaunchservices.m; sourceTree = "<group>"; };
+		F7C274252773295C00BA7617 /* test_launchservices.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_launchservices.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2823,6 +2843,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F70240EF276A960800839840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70240F0276A960800839840 /* LuaSkin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -3395,6 +3423,7 @@
 		4F98506D1B722C4100F7E909 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F70240E9276A95E000839840 /* launchservices */,
 				4F6689DF1C2852A100E48AF1 /* _coresetup */,
 				4F64D8BC1B724C3A00FC4C65 /* alert */,
 				4FDE05F71B73568E00E9E8EE /* appfinder */,
@@ -3967,6 +3996,7 @@
 				4F7F3B6C272AF68100E05732 /* libshortcuts.dylib */,
 				4FF06124274AA7A200FB15D6 /* libcamera.dylib */,
 				4FCA05CA27678B100089A5FC /* libmarkdown.dylib */,
+				F70240F6276A960800839840 /* liblaunchservices.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4089,6 +4119,7 @@
 				4F7BB9D526447C640077A926 /* HShotkey.m */,
 				4F2C0C7221BB4A03008F32C1 /* HSinspect.m */,
 				4F4F6DA925DB1BB6000187FA /* HSjsonTests.m */,
+				F7C274232773289D00BA7617 /* HSlaunchservices.m */,
 				4FCBAFD623B0FB95007BA1D0 /* HSmath.m */,
 				4FFF9FB425D89B3B00D2997C /* HSmouse.m */,
 				6AE181311D39C8F10097211C /* HSnoises.m */,
@@ -4257,6 +4288,17 @@
 				D6FD56821C04228800BAE238 /* libconsole.m */,
 			);
 			name = console;
+			sourceTree = "<group>";
+		};
+		F70240E9276A95E000839840 /* launchservices */ = {
+			isa = PBXGroup;
+			children = (
+				F70240EA276A95E000839840 /* liblaunchservices.m */,
+				F70240EB276A95E000839840 /* launchservices.lua */,
+				F7C274252773295C00BA7617 /* test_launchservices.lua */,
+			);
+			name = launchservices;
+			path = extensions/launchservices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4939,6 +4981,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D6FD568B1C0422B400BAE238 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70240F1276A960800839840 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -6128,6 +6177,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F70240F9276A96F000839840 /* PBXTargetDependency */,
 				4FCA05CC27678B330089A5FC /* PBXTargetDependency */,
 				4FF06127274AA7D900FB15D6 /* PBXTargetDependency */,
 				4F7F3B6F272AF7E100E05732 /* PBXTargetDependency */,
@@ -6651,6 +6701,23 @@
 			productReference = D6FD568F1C0422B400BAE238 /* libconsole.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		F70240EC276A960800839840 /* launchservices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70240F2276A960800839840 /* Build configuration list for PBXNativeTarget "launchservices" */;
+			buildPhases = (
+				F70240ED276A960800839840 /* Sources */,
+				F70240EF276A960800839840 /* Frameworks */,
+				F70240F1276A960800839840 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = launchservices;
+			productName = alert;
+			productReference = F70240F6276A960800839840 /* liblaunchservices.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -6740,6 +6807,7 @@
 				4FD0AC081B74BACD00A82496 /* hs */,
 				4F6B3E9E1B73D6D300B2A4DE /* json */,
 				4F76944A1B74C96800536DE4 /* keycodes */,
+				F70240EC276A960800839840 /* launchservices */,
 				4F6B3EB11B73DC4500B2A4DE /* location */,
 				4FCA05AF27678B100089A5FC /* markdown */,
 				4FCBAFC323B0D941007BA1D0 /* math */,
@@ -6843,6 +6911,7 @@
 				4FEF4D551C5FBC0F00E3B939 /* test_audiodevice.lua in Resources */,
 				4C5BA6B71C85EB0400E68CA9 /* test_fs.lua in Resources */,
 				4C403D661CBE627200EE20ED /* test_application.lua in Resources */,
+				F7C274262773295C00BA7617 /* test_launchservices.lua in Resources */,
 				4F6CE1311C6B93A90016668E /* test_timer.lua in Resources */,
 				4FDD8E7C1C85A05700085D7A /* lsunit.lua in Resources */,
 				4FDD8E7E1C85A06800085D7A /* testinit.lua in Resources */,
@@ -7577,6 +7646,7 @@
 				4FFF9FB525D89B3B00D2997C /* HSmouse.m in Sources */,
 				4FDD8E8F1C8DED1C00085D7A /* HSappfinder.m in Sources */,
 				6AE181321D39C8F10097211C /* HSnoises.m in Sources */,
+				F7C274242773289D00BA7617 /* HSlaunchservices.m in Sources */,
 				4FCC52CE1E1527EF007F93D0 /* HSbrightness.m in Sources */,
 				22A6626225FC087000AA329E /* HSserial.m in Sources */,
 				4FDD8E4E1C834C8100085D7A /* HSbase64.m in Sources */,
@@ -7790,6 +7860,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FD56901C0422DE00BAE238 /* libconsole.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70240ED276A960800839840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70240F7276A967C00839840 /* liblaunchservices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8260,6 +8338,11 @@
 			isa = PBXTargetDependency;
 			target = D6FD56851C0422B400BAE238 /* console */;
 			targetProxy = D6FD56911C04230200BAE238 /* PBXContainerItemProxy */;
+		};
+		F70240F9276A96F000839840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F70240EC276A960800839840 /* launchservices */;
+			targetProxy = F70240F8276A96F000839840 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -10719,6 +10802,30 @@
 			};
 			name = Release;
 		};
+		F70240F3276A960800839840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0C1C79272F5EA7002CA157 /* Extensions-Ideal.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F70240F4276A960800839840 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0C1C79272F5EA7002CA157 /* Extensions-Ideal.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Profile;
+		};
+		F70240F5276A960800839840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0C1C79272F5EA7002CA157 /* Extensions-Ideal.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -11668,6 +11775,16 @@
 				D6FD568D1C0422B400BAE238 /* Debug */,
 				4F04549D20F0EE7D00699F29 /* Profile */,
 				D6FD568E1C0422B400BAE238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F70240F2276A960800839840 /* Build configuration list for PBXNativeTarget "launchservices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70240F3276A960800839840 /* Debug */,
+				F70240F4276A960800839840 /* Profile */,
+				F70240F5276A960800839840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
